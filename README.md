@@ -1,6 +1,8 @@
 # LegacyLift
 
-Legacy code modernization tool. Upload PHP, COBOL, VB6, Perl, Fortran, Pascal, or Java code and get it rewritten into modern Python, TypeScript, Go, or Java — with full documentation, unit tests, confidence scoring, complexity analysis, architecture diagrams, and PDF reports.
+Legacy code modernization tool. Upload PHP, COBOL, VB6, Perl, Fortran, Pascal, or Java code and get it rewritten into modern Python, TypeScript, Go, or Java with full documentation, unit tests, confidence scoring, complexity analysis, architecture diagrams, and PDF reports.
+
+This started as a Day 1 submission for the OpenAI x Outskill hackathon and now includes the full frontend and backend project.
 
 ## Features
 
@@ -101,3 +103,10 @@ npm run dev
 | Free       | 5               | $0       |
 | Pro        | 100             | $9.99/mo |
 | Enterprise | 10,000          | Custom   |
+
+## Day 1 Notes
+
+- Finalized the LegacyLift concept and OpenAI-powered modernization workflow.
+- Added safe `.gitignore` rules so local API keys are not pushed.
+- OpenAI API credits are limited, so testing should start with small examples.
+- Deployment is not live yet.
