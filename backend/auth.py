@@ -6,6 +6,7 @@ JWT-based signup/login with bcrypt password hashing and tier-based usage limits.
 from __future__ import annotations
 
 import os
+import secrets
 from datetime import datetime, timedelta, timezone
 
 import bcrypt
@@ -15,7 +16,7 @@ from pydantic import BaseModel, EmailStr
 
 from database import get_db
 
-SECRET_KEY = os.getenv("JWT_SECRET", "legacylift-secret-change-in-production")
+SECRET_KEY = os.getenv("JWT_SECRET") or secrets.token_urlsafe(32)
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_HOURS = 24
 

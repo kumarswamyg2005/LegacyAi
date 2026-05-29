@@ -44,7 +44,7 @@ export default function ChatPanel({
   const handleSend = useCallback(async (text: string) => {
     if (!text.trim() || isSending) return;
 
-    const userMessage: Message = { role: "user", content: text };
+    const userMessage: ChatMessage = { role: "user", content: text };
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setIsSending(true);
@@ -67,7 +67,7 @@ export default function ChatPanel({
       }
 
       const data = await response.json();
-      const assistantMessage: Message = {
+      const assistantMessage: ChatMessage = {
         role: "assistant",
         content: data.reply || "No response received.",
       };

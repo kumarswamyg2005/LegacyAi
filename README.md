@@ -30,7 +30,7 @@ python3.11 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
-# Edit .env and add your OPENAI_API_KEY
+# Edit .env and add your OPENAI_API_KEY and JWT_SECRET
 python main.py
 # Server runs on http://localhost:8000
 ```
