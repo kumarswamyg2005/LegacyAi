@@ -103,10 +103,3 @@ npm run dev
 | Free       | 5               | $0       |
 | Pro        | 100             | $9.99/mo |
 | Enterprise | 10,000          | Custom   |
-
-## Day 1 Notes
-
-- Finalized the LegacyLift concept and OpenAI-powered modernization workflow.
-- Added safe `.gitignore` rules so local API keys are not pushed.
-- OpenAI API credits are limited, so testing should start with small examples.
-- Deployment is not live yet.
